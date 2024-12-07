@@ -1,0 +1,38 @@
+.Home {
+    display: grid;              /* استخدام grid بدلًا من flex */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* تحديد عدد الأعمدة بناءً على حجم العناصر */
+    gap: 20px;                 /* المسافة بين العناصر */
+  }
+  
+  .card-image {
+    width: 100%;               /* تأكيد أن العنصر يملأ عرض الحاوية */
+    height: 300px;             /* تحديد ارتفاع العنصر */
+    overflow: hidden;          /* لإخفاء أي جزء من الصورة يخرج عن الحاوية */
+    position: relative;        /* لضمان وضع الصورة بشكل صحيح داخل الحاوية */
+    border: 1px solid gray;    /* تحديد حدود العنصر */
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .image-style {
+    width: 100%;
+    height: 70%;               /* تأكيد أن الصورة تأخذ كامل الحاوية */
+    object-fit: cover;         /* لتغطية الصورة بشكل كامل داخل العنصر */
+    object-position: center;   /* لجعل الصورة تتوسط الحاوية */
+    margin-bottom: 3px;
+    border-radius: 5px;
+  }
+  
+  .weight_normal_font {
+    font-weight: normal;
+    color: gray;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;     /* تحديد عدد الأسطر التي تظهر */
+    -webkit-box-orient: vertical; /* لتنسيق النص بشكل عمودي */
+    overflow: hidden;          /* لإخفاء النص الزائد */
+    text-overflow: ellipsis;   /* إضافة "..." عند تجاوز النص */
+    white-space: normal;       /* السماح بتفصيل النص بشكل طبيعي */
+    width: 100%;               /* تأكيد أن النص يملأ عرض الحاوية */
+  }
+  
