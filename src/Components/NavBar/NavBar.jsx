@@ -33,7 +33,7 @@ const NavBar = () => {
         if(state==true){
           setState(!state);
         }
-      }} className={showNavbar_SignIn==false?"logo":"logo_SignIn"}>Logo</Link>
+      }} className={showNavbar_SignIn==false?"logo":"logo_SignIn"}>Logo1</Link>
       <h1 className={showNavbar_SignIn==false?"menu":"menu_SignIn"} onClick={() => {
          console.log("Fuck");
          setState(!state);
