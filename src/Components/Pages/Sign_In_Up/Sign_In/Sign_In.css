@@ -7,9 +7,10 @@
 }
 .BoxImage{
     height: 100%;
-    width: 73%;
+    width: 60%;
     justify-content: center;
     display: flex;
+    padding: 30px;
 }
 .detailsSignIn{
     font-weight: normal;
@@ -18,15 +19,24 @@
 }
 .BoxInput{
     display: flex;
-    width: 27%;
+    width: 40%;
     height: 100%;
+    max-width: 25%;
+
     flex-direction: column;
     justify-content: center;
     padding: 5px;
 
 }
+@media screen and (min-width:600px) and (max-width:800px) {
+    .BoxInput{
+        margin: 5% 5%;
+        padding-top: 20px;
+        max-width: 100%;
+    }
+}
 
-@media screen and (max-width:800px) {
+@media screen and (min-width:0px) and (max-width:600px) {
     .signIn{
         flex-direction: column;
     }
@@ -36,4 +46,15 @@
     .BoxInput{
         width: 100%;
     }
+    .image_in_Mobile{
+        width: 100%;
+        max-width: 70%;
+    }
+    .BoxImage{
+        padding: 0px;
+    }
+    .BoxInput{
+        max-width: 100%;
+    }
+    
 }

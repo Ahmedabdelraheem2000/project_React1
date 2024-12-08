@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState}from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -6,15 +6,18 @@ import './Sign_In.css'
 import LearningImage from '../../../../assets/learning.png';
 
 const SignIn = () => {
-
+  const [informationSignIn , setinformationSignIn] = useState({
+    email : '',
+    password : ''
+  })
   return (
     <>
        <Box className="signIn">
       {/* الحاوية اليسرى */}
       <Box className='BoxImage'
       >
-       <img style={{
-        objectFit:"cover"
+       <img className='image_in_Mobile' style={{
+        objectFit:"cover",
         }} src={LearningImage} alt='Error'/>
       </Box>
 
@@ -30,7 +33,14 @@ const SignIn = () => {
         <h1 className='detailsSignIn'>
           Welcome to my first project
         </h1>
-        <TextField 
+        <TextField onChange={(text)=>{
+            setinformationSignIn({
+              ...informationSignIn,
+              email:text.target.value
+            }
+            )
+        }}
+        value={informationSignIn.email}
           sx={{marginTop:'30px'}}
           id="outlined-basic"
           label="Email"

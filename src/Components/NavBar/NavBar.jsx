@@ -78,13 +78,16 @@ const NavBar = () => {
             }
           }} to="/contact">Contact</Link>
           <Link className='link_Nav' style={{
-            border: "1px solid white"
-
+            background:"white",
+            color:"rgb(1, 14, 35)",
+            alignItems:"center",
+            display:"inline-flex",
+            flexDirection:"column"
           }} onClick={()=>{
             if(state==true){
               setState(!state);
             }
-          }} to="/signIn">Sign In / Up</Link>
+          }} to="/signIn">Sign In</Link>
 
             </div>
           ):<>
