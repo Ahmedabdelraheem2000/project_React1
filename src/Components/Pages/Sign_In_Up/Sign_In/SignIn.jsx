@@ -3,6 +3,8 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import './Sign_In.css'
+import LearningImage from '../../../../assets/learning.png';
+
 const SignIn = () => {
 
   return (
@@ -13,7 +15,7 @@ const SignIn = () => {
       >
        <img style={{
         objectFit:"cover"
-        }} src='/src/assets/Learning.png' alt='Error'/>
+        }} src={LearningImage} alt='Error'/>
       </Box>
 
       {/* الحاوية اليمنى */}
