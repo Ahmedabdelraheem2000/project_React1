@@ -7,11 +7,13 @@ import Services from './Components/Pages/Services'
 import Contact from './Components/Pages/Contact'
 import ShowData from './Components/Pages/Show_Data/ShowData'
 import SignIn from './Components/Pages/Sign_In_Up/Sign_In/SignIn'
+import { Container } from '@mui/material';
 
 const App = () => {
   return (
     <div>
       <NavBar/>
+
       <div className='App'>
       <Routes>
       <Route path='/' element={<Home/>}/>
@@ -20,6 +22,7 @@ const App = () => {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/showData/:id' element={<ShowData/>}/>
       <Route path='/signIn' element={<SignIn check={true} />}/>
+
       </Routes>
       </div>
      

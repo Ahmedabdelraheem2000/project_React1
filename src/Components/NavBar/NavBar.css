@@ -19,12 +19,13 @@
     left: 0;
     width: 100%;
     padding: 10px 5%;
-    background: white;
+    shape-outside: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
+    background: white;
+    box-shadow: 0px 1px 1px  rgba(1, 14, 35, 0.1);
 }
 
 
@@ -50,10 +51,9 @@
     font-size: 18px;
     color: #fff;
     font-weight: 500;
-    margin-left: 40px;
 }
 
-.navbar a::before {
+ /* .navbar a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -66,7 +66,24 @@
 
 .navbar a:hover::before {
     width: 100%;
+}  */
+  
+.link_Nav {
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    justify-content: flex-start;
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
 }
+.link_Nav:hover{
+    background-color: rgb(39, 17, 82);
+}
+.link_Nav:focus{
+    background-color: rgb(88, 78, 102);
+
+}
+
 .menu {
     display: none;
     
@@ -81,13 +98,18 @@
     .navigation_Mobile_off{
         display: none;
     }
-    .navigation_Mobile_on{
+    .navigation_Mobile_on {
+        width: 100vw;
+        
         display: flex;
+        padding: 4%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start; /* هذا يضمن محاذاة العناصر رأسياً من الأعلى */
     }
+    
     .headerMobile{
         display: flex;
+
         width: 100%;
         justify-content: space-between;
     }
@@ -114,6 +136,22 @@
           background-color: white;
          border: none;
     }
+
+    .link_Nav {
+        text-decoration: none;
+        padding: 15px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        transition: background-color 0.5s ease;
+        border-radius: 5px;
+    }
+    
+    /* التأثير عند الضغط */
+    .link_Nav:active {
+        background-color: rgb(88, 78, 102);
+
+    }
+    
 
 }
 
