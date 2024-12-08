@@ -13,7 +13,7 @@ const SignIn = () => {
       >
        <img style={{
         objectFit:"cover"
-        }} src='/src/assets/Learning.png'/>
+        }} src='/src/assets/Learning.png' alt='Error'/>
       </Box>
 
       {/* الحاوية اليمنى */}
